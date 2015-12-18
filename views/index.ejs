@@ -1,0 +1,45 @@
+    <%- include head %>
+    <%- include nav %>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<div class="slider"></div>
+    		</div>
+    	</div>
+		<div class="row">
+	 	  <div class="col-md-8">
+	 	  	  <ul class="posts-list clearfix">
+	 	  	  	<% for(var i=0; i<todos.length;i++) {%>
+	 	  	  		<li class="list clearfix">
+	 	  	  		  <div class="list-item row clearfix">
+ 	  	  		  	    	<div class="list-img col-md-4">
+ 	  	  		  	    		<a href="u/<%= todos[i].get('findId') %>">
+	 	  	  		  	  	  	    <img src="<%= todos[i].get('url') %>" alt="...">
+	 	  	  		  	  	  	</a>
+	 	  	  		  	  	</div>
+	 	  	  		  	    <div class="list-info col-md-8">
+ 	  	  		  	    		<h3 class="list-title">
+ 	  	  		  	    			<a href="u/<%= todos[i].get('findId') %>">
+ 	  	  		  	    				<%= todos[i].get('title') %>
+ 	  	  		  	    			</a>
+ 	  	  		  	    		</h3>
+	 	  	  		  	    	<div class="list-content">
+		 	  	  		  	  	  	<%= todos[i].get('content') %>
+		 	  	  		  	  	</div>
+	 	  	  		  	    </div> 
+		 	  	  	   </div>	  		  	 	  	  		  
+		 	  	  	</li>
+	 	  	  	<% } %>	
+	 	  	  </ul>
+	 	    </div>
+	 	    <div class="col-md-4">
+	 	    	<div class="notice">
+	 	    		<div class="notice-title">小记</div>
+	 	    		<div class="notice-info">
+	 	    			随手记下前端的一点点心得...
+	 	    		</div>
+	 	    	</div>
+	 	    </div>
+	    </div>
+    </div>
+<%- include footer %>

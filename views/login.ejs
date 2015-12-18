@@ -1,0 +1,48 @@
+<%- include head %>
+  	  <%- include nav %>
+      <div class="container">
+      	 <div class="row">
+      	 	  <div class="col-md-6 col-md-offset-3">
+      	 	  	  <div class="panel panel-default panel-page">
+      	 	  	  	  <div class="panel-heading">
+      	 	  	  	  	<h2>登录</h2>
+      	 	  	  	  </div>
+      	 	  	  	  <div class="panel-body">
+      	 	  	  	  	  <form class="form-vertical" method="post">
+      	 	  	  	  	  	  <div class="form-group mb40">
+      	 	  	  	  	  	  	   <label for="usename" class="control-label">用户名</label>
+      	 	  	  	  	  	  	   <div>
+      	 	  	  	  	  	  	   	    <input type="text"  name="username" class="form-control" />
+      	 	  	  	  	  	  	   	    <div class="help-block hide">
+      	 	  	  	  	  	  	   	    	<span class="text-danger"></span>
+      	 	  	  	  	  	  	   	    </div>
+      	 	  	  	  	  	  	   </div>
+      	 	  	  	  	  	  </div>
+      	 	  	  	  	  	  <div class="form-group mb40">
+                                   <label for="password" class="control-label ">密码</label>
+                                   <div>
+                                       <input type="text" id="password" name="password" class="form-control">
+                                       <div class="help-block hide">
+                                           <span class="text-danger">请输入密码</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="form-group mb40">
+                                   <div class="controls pemember-password-wrap">
+                                       <input type="submit" value="登录" class="btn btn-primary btn-large">
+                                       
+                                   </div>
+                               </div>
+                               <div class="pt20">
+                                   <a href="#">找回密码</a>
+                                   <span class="text-muted mhs">|</span>
+                                   <span class="text-muted">还没有注册帐号？</span>
+                                   <a href="/reg">立即注册</a>
+                               </div>
+      	 	  	  	  	  </form>
+      	 	  	  	  </div>
+      	 	  	  </div>
+      	 	  </div>
+      	 </div>
+      </div>
+<%- include footer %>

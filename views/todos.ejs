@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>123</title>
+    <link rel='stylesheet' href='/stylesheets/reset-min.css' />	
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/index.css' />	
+  </head>
+  <body>
+    <%- include nav %>
+    <div class="container">
+    	 <div class="row">
+    	 	  <div class="col-md-8">
+    	 	  	  <div class="well text-center">
+    	 	  	  	 <h5>人生若只如初见，何事秋风悲画扇</h5>
+    	 	  	  </div>
+    	 	  	  <ul class="posts-list">
+    	 	  	  	<!--<li>
+    	 	  	  		  <div class="panel panel-default">
+    	 	  	  		  	 <div class="panel-heading">javascript小事一二则</div>
+    	 	  	  		  	 <div class="panel-body">
+    	 	  	  		  	 	  <div class="row">
+    	 	  	  		  	 	  	 <div class="col-sm-4">
+    	                           <a href="#" class="thumbnail">
+    	                           	  <img src="..." alt="...">
+    	                           </a>
+    	 	  	  		  	 	  	 </div>
+    	 	  	  		  	 	  	 <div class="col-sm-8">
+    	 	  	  		  	 	  	 	  当一个网站有很多js代码要加载，js代码放置的位置在一定程度上将会影像网页的加载速度，为了让我们的网页加载速度更快，本文总结了一下几个注意点： 1、延迟加载js代码 
+    	 	  	  		  	 	  	 </div>
+    	 	  	  		  	 	  </div>
+    	 	  	  		  	 </div>
+    	 	  	  		  </div>
+    	 	  	  	</li>-->
+    	 	  	  	<!--li end-->
+    	 	  	  	<% for(var i=0; i<todos.length;i++) {%>
+    	 	  	  		<li>
+    	 	  	  		  <div class="panel panel-default">
+    	 	  	  		  	 <div class="panel-heading">
+    	 	  	  		  	 	 <%= todos[i].get('foo') %>
+    	 	  	  		  	 </div>
+    	 	  	  		  	 <div class="panel-body">
+    	 	  	  		  	 	  <div class="row">
+    	 	  	  		  	 	  	 <div class="col-sm-4">
+    	                           <a href="#" class="thumbnail">
+    	                           	  <img src="..." alt="...">
+    	                           </a>
+    	 	  	  		  	 	  	 </div>
+    	 	  	  		  	 	  	 <div class="col-sm-8">
+    	 	  	  		  	 	  	 	 <%= todos[i].get('username') %>
+    	 	  	  		  	 	  	 </div>
+    	 	  	  		  	 	  </div>
+    	 	  	  		  	 </div>
+    	 	  	  		  </div>
+    	 	  	  	  </li>
+    	 	  	  	<% } %>	
+    	 	  	  </ul>
+    	 	  </div>
+    	 	  <!--left end-->
+    	 	  <div class="col-md-4">
+    	 	  	  <div class="panel panel-default">
+    	 	  	  	 <div class="panel-heading">
+    	 	  	  	 	  <h4>热门文章</h4> 
+    	 	  	  	 </div>
+    	 	  	  	 <div class="panel-body">
+    	 	  	  	 	  <ul class="hots">
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  </ul>
+    	 	  	  	 </div>
+    	 	  	  </div>
+    	 	  	  <div class="panel panel-default">
+    	 	  	  	 <div class="panel-heading">
+    	 	  	  	 	  <h4>最新评论</h4> 
+    	 	  	  	 </div>
+    	 	  	  	 <div class="panel-body">
+    	 	  	  	 	  <ul class="hots">
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  	<li>
+ 	  	  	 	  		 	  	 <div class="row">
+ 	  	  	 	  		 	  	 	  <a href="#">
+	 	  	  	 	  		 	  	 	  <div class="col-sm-2">
+	 	  	  	 	  		 	  	 	  	 	  <img src="..." alt="..."/>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	  <div class="col-sm-8">
+	 	  	  	 	  		 	  	 	  	  <h4>hello world</h4>
+	 	  	  	 	  		 	  	 	  	  <ul>
+	 	  	  	 	  		 	  	 	  	  	<li></li>
+	 	  	  	 	  		 	  	 	  	  </ul>
+	 	  	  	 	  		 	  	 	  </div>
+	 	  	  	 	  		 	  	 	</a>  
+ 	  	  	 	  		 	  	 </div>
+    	 	  	  	 	  	</li>
+    	 	  	  	 	  	<!--li end-->
+    	 	  	  	 	  </ul>
+    	 	  	  	 </div>
+    	 	  	  </div>
+    	 	  </div>
+    	 	  <!--right end-->
+    	 </div>
+    </div>
+  </body>
+</html>

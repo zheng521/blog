@@ -1,0 +1,36 @@
+
+  <nav class="navbar navbar-default navbar-fixed-top mb40">
+  	  <div class="container">
+            <a class="navbar-brand" href="#">
+            	<img src="/images/logo.png"/>
+            </a>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            	<div class="row">
+            	  <ul class="nav navbar-nav navbar-left">
+            	  		<li class="#"><a href="/" class="active">首页</a></li>
+            	  		<li><a href="/">JavaScript</a></li>
+            	  		<li><a href="/">CSS</a></li>
+            	  		<% if(uname){ %>
+			                <ul class="nav navbar-nav navbar-left navbar-right">
+			                	<li><a href="/publish">发表</a></li>
+			                </ul>
+			               <% }else{ %> 
+			               	
+			               <% } %>	
+            	  </ul>
+            	  <% if(uname){ %>
+	                <ul class="nav navbar-nav navbar-left navbar-right">
+	                	 <li><a href="#"><%= uname %></a></li>
+	                   <li><a href="/logout">登出</a></li>
+	             
+	                </ul>
+	               <% }else{ %> 
+	               	<ul class="nav navbar-nav navbar-left navbar-right">
+	                     <li><a href="/login">登录 </a></li>
+            	  		   <li><a href="/reg">注册</a></li>
+	                </ul>
+	               <% } %>	
+	              </div>  
+        </div><!-- /.navbar-collapse -->
+  	  </div>
+  </nav>
