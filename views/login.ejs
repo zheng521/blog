@@ -8,7 +8,7 @@
       	 	  	  	  	<h2>登录</h2>
       	 	  	  	  </div>
       	 	  	  	  <div class="panel-body">
-      	 	  	  	  	  <form class="form-vertical" method="post">
+      	 	  	  	  	  <form class="form-vertical" method="post" id="defaultForm">
       	 	  	  	  	  	  <div class="form-group mb40">
       	 	  	  	  	  	  	   <label for="usename" class="control-label">用户名</label>
       	 	  	  	  	  	  	   <div>
@@ -21,7 +21,7 @@
       	 	  	  	  	  	  <div class="form-group mb40">
                                    <label for="password" class="control-label ">密码</label>
                                    <div>
-                                       <input type="text" id="password" name="password" class="form-control">
+                                       <input type="password" id="password" name="password" class="form-control">
                                        <div class="help-block hide">
                                            <span class="text-danger">请输入密码</span>
                                        </div>
@@ -46,3 +46,5 @@
       	 </div>
       </div>
 <%- include footer %>
+    <script type="text/javascript" src="/javascripts/bootstrapValidator.min.js" ></script>
+    <script type="text/javascript" src="/javascripts/myForm.js" ></script>

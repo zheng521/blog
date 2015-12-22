@@ -146,6 +146,7 @@ app.post('/login',function(req,res){
 			  	post.set("password",pws);
 			  	post.save(null,{
 			  		success: function(post){
+			  			req.session.uname = uname;
 			  			res.redirect('/');
 			  		},
 			  		error:function(post,error){
@@ -154,7 +155,6 @@ app.post('/login',function(req,res){
 			  	});
 			  	
 		  	}else{
-		  		
 		  		res.redirect('/reg');
 		  	}	   
 		  },
