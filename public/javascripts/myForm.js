@@ -32,7 +32,29 @@ $(function()
                             message: '用户名长度必须在6到30之间'
                         }
                     }
-                }
+                },
+                title: {
+                    message:'标题不能为空',
+                    validators: {
+                        notEmpty: {
+                            message: '标题不能为空'
+                        },
+                        stringLength: {
+                            min: 4,
+                            max: 40,
+                            message: '标题长度必须在6到30之间'
+                        }
+                    }
+                },
+                content: {
+                    message:'内容不能为空',
+                    validators: {
+                        notEmpty: {
+                            message: '内容不能为空'
+                        }
+                     
+                    }
+                } 
             }
         })
 })
