@@ -22,7 +22,10 @@ body{
 	height: 60px;
 	line-height: 30px;
 }
-
+.navbar-nav li.active a{
+	background: #eee;
+	color: #000000;
+}
 .navbar-nav li a.active{
 	background: #eee;
 	color: #000000;

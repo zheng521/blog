@@ -10,6 +10,7 @@ module.exports=function(app){
 	 
 	  query.find({
 	    success: function(results) {
+	
 	      res.render('index', {
 	        todos: results,
 	        uname:req.session.uname

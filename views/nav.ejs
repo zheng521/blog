@@ -6,8 +6,8 @@
             </a>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
             	<div class="row">
-            	  <ul class="nav navbar-nav navbar-left">
-            	  		<li class="#"><a href="/" class="active">首页</a></li>
+            	  <ul class="nav navbar-nav navbar-left nav-blog">
+            	  		<li class="active"><a href="/">首页</a></li>
             	  		<!--<li><a href="/">JavaScript</a></li>
             	  		<li><a href="/">CSS</a></li>-->
             	  		<% if(uname){ %>
@@ -33,4 +33,13 @@
 	              </div>  
         </div><!-- /.navbar-collapse -->
   	  </div>
+  	  <script type="text/javascript" src="/javascripts/jquery-1.11.2.min.js" ></script>
+  	  <script type="text/javascript">
+  	  	$(function(){
+  	  		$('.nav-blog li').click(function(){
+  	  			 $(this).addClass('active').siblings().removeClass('active');
+             console.log("123");
+  	  		});
+  	  	})
+  	  </script>
   </nav>
