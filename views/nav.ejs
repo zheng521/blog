@@ -7,15 +7,14 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
             	<div class="row">
             	  <ul class="nav navbar-nav navbar-left nav-blog">
-            	  		<li class="active"><a href="/">首页</a></li>
+            	  		<li class=<%= hoverIndex %>><a href="/">首页</a></li>
             	  		<!--<li><a href="/">JavaScript</a></li>
             	  		<li><a href="/">CSS</a></li>-->
             	  		<% if(uname){ %>
 			                <ul class="nav navbar-nav navbar-left navbar-right">
-			                	<li><a href="/publish">发表</a></li>
+			                	<li class=<%= hoverPublish %>><a href="/publish">发表</a></li>
 			                </ul>
-			               <% }else{ %> 
-			               	
+			               <% }else{ %>  
 			               <% } %>	
             	  </ul>
             	  <% if(uname){ %>
@@ -26,20 +25,12 @@
 	                </ul>
 	               <% }else{ %> 
 	               	<ul class="nav navbar-nav navbar-left navbar-right">
-	                     <li><a href="/login">登录 </a></li>
-            	  		   <li><a href="/reg">注册</a></li>
+	                     <li class=<%= hoverLogin %>><a href="/login">登录 </a></li>
+            	  		   <li class=<%= hoverReg %>><a href="/reg">注册</a></li>
 	                </ul>
 	               <% } %>	
 	              </div>  
         </div><!-- /.navbar-collapse -->
   	  </div>
   	  <script type="text/javascript" src="/javascripts/jquery-1.11.2.min.js" ></script>
-  	  <script type="text/javascript">
-  	  	$(function(){
-  	  		$('.nav-blog li').click(function(){
-  	  			 $(this).addClass('active').siblings().removeClass('active');
-             console.log("123");
-  	  		});
-  	  	})
-  	  </script>
   </nav>

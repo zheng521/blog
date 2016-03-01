@@ -13,8 +13,11 @@ module.exports=function(app){
 	
 	      res.render('index', {
 	        todos: results,
-	        uname:req.session.uname
-
+	        uname:req.session.uname,
+	        hoverIndex: "active",
+	        hoverPublish:"",
+            hoverLogin:"",
+            hoverReg:""
 	      });
 	       
 	    },
@@ -41,7 +44,11 @@ module.exports=function(app){
 		  success: function(results) {
 		    res.render('detail', {
 	          todos: results,
-	          uname:req.session.uname
+	          uname:req.session.uname,
+	          hoverIndex: "",
+		      hoverPublish:"",
+	          hoverLogin:"",
+	          hoverReg:""
 	         });
 			   
 		  },
@@ -54,7 +61,11 @@ module.exports=function(app){
 	
   app.get('/publish',function(req,res){
   	res.render('publish', {
-	          uname:req.session.uname
+	          uname:req.session.uname,
+	          hoverIndex: "",
+		      hoverPublish:"active",
+	          hoverLogin:"",
+	          hoverReg:""
         });
   });
   app.post('/publish',function(req,res){
@@ -117,7 +128,11 @@ app.post('/login',function(req,res){
   });
   app.get('/login',function(req,res){
   	res.render('login', {
-	         uname:req.session.uname 
+	         uname:req.session.uname,
+	         hoverIndex: "",
+		     hoverPublish:"",
+	         hoverLogin:"active",
+	         hoverReg:""
 	        
         });
     
@@ -128,7 +143,11 @@ app.post('/login',function(req,res){
  //注册
   app.get('/reg',function(req,res){
   	res.render('reg', {
-	          uname:req.session.uname
+	          uname:req.session.uname,
+	          hoverIndex: "",
+		      hoverPublish:"",
+	          hoverLogin:"",
+	          hoverReg:"active"
         });
   });
   app.post('/reg',function(req,res){
